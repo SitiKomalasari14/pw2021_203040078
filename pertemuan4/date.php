@@ -11,35 +11,35 @@ Materi pertemuan ke-4 ini mempelajari penggunaan function pada PHP (Date/Time)
 <?php
 //DATE 
 // Untuk menampilkan tanggal dengan format tertentu 
-    // echo date("l");
-    // echo date("d");
-    // echo date("M");
-    // echo date("m");
 
-    // echo date("l, d-M-Y"); 
+echo date("l");
+echo date("d");
+echo date("M");
+echo date("m");
+echo date("l, d-M-Y"); 
 
 //TIME
 // UNIX Timestamp / EPOCH Time
 // detik yang sudah berlalu sejak 1 Januari 1970
 
-// echo time(); 
-// echo date("l", time()+172800); ------------> menghitung 2 hari kedepan
-// echo date("l", time()+60*60*24*100);  ------------> menghitung 100 hari kedepan 
-// echo date("d M Y", time()-60*60*24*100); -------------- 100 hari kebelakang
+echo time(); 
+echo date("l", time()+172800);                  //menghitung 2 hari kedepan
+echo date("l", time()+60*60*24*100);            //menghitung 100 hari kedepan 
+echo date("d M Y", time()-60*60*24*100);        // 100 hari kebelakang
 
 // MKTIME
 // membuat detik sendiri 
 // mktime (0,0,0,0,0,0)
 // jam, menit, detik, bulan, tanggal, tahun
 
-// echo mktime(0,0,0,7,14,2002);
-// echo date("l", mktime(0,0,0,7,14,2002));
+echo mktime(0,0,0,7,14,2002);
+echo date("l", mktime(0,0,0,7,14,2002));
 
 // strtotime
 // kebalikan dari mktime
 
-// echo strtotime("14 jul 2002");
-// echo date("l", strtotime("14 jul 2002"));
+echo strtotime("14 jul 2002");
+echo date("l", strtotime("14 jul 2002"));
 
 /* function yang sering dipakai pada seri PHP 
 yang berhubungna dengan String:
