@@ -31,12 +31,12 @@ B - Informatika
 <body>
 
 <table border="0" cellpadding="10" cellspacing="0">
-<?php for($i = 1; $i <= 6; $i++) : ?>
+<?php for($kolom = 1; $kolom <= 6; $kolom++) : ?>
     <tr>
-        <?php for( $j = 1; $j <= 6; $j++) : ?>
-            <?php if (($i + $j) %2 == 1) { ?>
+        <?php for( $baris = 1; $baris <= 6; $baris++) : ?>
+            <?php if (($kolom + $baris) %2 == 1) { ?>
                 <td class="biru"></td>
-            <?php } else if (($i + $j) %2 == 0 ) { ?>
+            <?php } else if (($kolom + $baris) %2 == 0 ) { ?>
                 <td class="salmon"></td>
             <?php } ?>
         <?php endfor; ?>

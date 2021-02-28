@@ -17,17 +17,17 @@ B - Informatika
     <table border="1" cellspacing="0" cellpadding="10">
         <tr>
             <th></th>
-            <?php for ( $i = 1; $i <= 5; $i++) :   ?>
-                <th>Kolom <?= $i; ?></th>
+            <?php for ( $x = 1; $x <= 5; $x++) :   ?>
+                <th>Kolom <?= $x; ?></th>
             <?php endfor; ?>
         </tr>
         
         
-        <?php for($i = 1; $i <=5; $i++) : ?>
+        <?php for($x = 1; $x <=5; $x++) : ?>
             <tr>
-                <th>Baris <?= $i; ?></th>
-                <?php for($b = 1; $b <= 5; $b++) : ?>
-                    <td><?php echo "Baris $i, Kolom$b"; ?></td>
+                <th>Baris <?= $x; ?></th>
+                <?php for($y = 1; $y <= 5; $y++) : ?>
+                    <td><?php echo "Baris $x, Kolom$y"; ?></td>
                 <?php endfor; ?>
             </tr>
         <?php endfor; ?>

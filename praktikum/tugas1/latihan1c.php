@@ -28,9 +28,9 @@ B - Informatika
 <body>
 
 <?php 
-for ($i = 1; $i <= 3; $i ++) : ?>
-    <?php for($y = 1; $y <= $i; $y++) : ?>
-        <div class="lingkaran"><?php echo $i; ?> </div>
+for ($x = 1; $x <= 3; $x ++) : ?>
+    <?php for($y = 1; $y <= $x; $y++) : ?>
+        <div class="lingkaran"><?php echo $x; ?> </div>
     <?php endfor; ?>
     <?php echo "<br>" ?>
  <?php endfor; ?>

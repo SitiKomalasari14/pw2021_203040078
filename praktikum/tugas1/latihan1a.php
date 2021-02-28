@@ -8,9 +8,9 @@ B - Informatika
 ?>
 
 <?php
-for($i = 1; $i <= 3; $i++) {
-    for($b = 1; $b <= 3; $b++) {
-        echo "Ini perulangan ke- ($i,$b)<br>";
+for($x = 1; $x <= 3; $x++) {
+    for($y = 1; $y <= 3; $y++) {
+        echo "Ini perulangan ke- ($x,$y)<br>";
     }
 }
 ?>
