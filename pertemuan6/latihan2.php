@@ -4,7 +4,7 @@ Siti Komalasari
 203040078
 github.com/SitiKomalasari14/pw2021_203040078
 Pertemuan 6 - (10 Maret 2021)
-Materi pertemuan ke-6 ini mempelajari tentang ARRAY ASOSIATIF
+Materi pertemuan ke-6 ini mempelajari tentang ARRAY Associative
 */
 ?>
 <?php 
