@@ -46,7 +46,7 @@ B - Informatika
     [
         "nama" => "Sadio Mane",
         "club" => "Liverpool",
-        "main" => "163",
+        "main" => "63",
         "gol" => "30",
         "assist" => "70"
     ],
@@ -75,45 +75,43 @@ foreach ($pemain_bola as $pb => $value) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lat3d_203040078</title>
     <style>
-        .tabel {
-            width: 50%;
-            padding: 10px;
-            font-family: arial;
-            text-align: left;
-        }
+    table {
+        text-align: center;
+        font-family: arial;
+    }
+    
     </style>
 </head>
 <body>
-    <div class="tabel">
-            <table border="1" cellspacing="0" cellpadding="10">
-                <td><b>NO</b></td>
-                <td><b>NAMA</b></td>
-                <td><b>CLUB</b></td>
-                <td><b>MAIN</b></td>
-                <td><b>GOAL</b></td>
-                <td><b>ASSIST</b></td>
-                <tr></tr>
-                <?php  $nomor = 1; ?>    
-                <?php foreach ($pemain_bola as $pb) : ?>  
-                        
-                        <td><?= $nomor; ?></td>
-                        <td><?= $pb["nama"];?></td>
-                        <td><?= $pb["club"];?></td>
-                        <td><?= $pb["main"];?></td>
-                        <td><?= $pb["gol"];?></td>
-                        <td><?= $pb["assist"];?></td>
-                        <tr></tr>  
-                        <?php $nomor++; ?>
-                <?php endforeach; ?>
-                <th>#</th>
-                <th colspan="2">
-                <center>Jumlah</center>
-                </th>
-                <th><?= $total_main ?></th>
-                <th><?= $total_gol ?></th>
-                <th><?= $total_assist ?></th>
+    <table border="1" cellspacing="0" cellpadding="10" >
+        <td><b>NO</b></td>
+        <td><b>NAMA</b></td>
+        <td><b>CLUB</b></td>
+        <td><b>MAIN</b></td>
+        <td><b>GOAL</b></td>
+        <td><b>ASSIST</b></td>
+        <tr></tr>
+    
+        <?php  $nomor = 1; ?>    
+        <?php foreach ($pemain_bola as $pb) : ?>  
+            <td><?= $nomor; ?></td>
+            <td><?= $pb["nama"];?></td>
+            <td><?= $pb["club"];?></td>
+            <td><?= $pb["main"];?></td>
+            <td><?= $pb["gol"];?></td>
+            <td><?= $pb["assist"];?></td>
+            <tr></tr>    
+        <?php $nomor++; ?>
+        <?php endforeach; ?>
+        <th>#</th>
+        <th colspan="2">
+        <center>Jumlah</center>
+        </th>
+        <th><?= $total_main ?></th>
+        <th><?= $total_gol ?></th>
+        <th><?= $total_assist ?></th>
                 
-           </table>
-    </div>
+    </table>
+   
 </body>
 </html>
