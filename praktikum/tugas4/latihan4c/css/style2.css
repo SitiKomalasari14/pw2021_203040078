@@ -1,0 +1,14 @@
+table {
+    margin: 20px;
+
+}
+tr {
+    width: 50%;
+}
+
+table, tr, td, th, thead{
+    border: 1px solid black;
+}
+body {
+    background-color: #e4d3cf
+}
