@@ -14,7 +14,7 @@ $conn = mysqli_connect("localhost", "root", "", "pw_tubes_203040078");
 //mengambil data dari database
 $result = mysqli_query($conn, "SELECT *  FROM buku ");
 if (!$result) {
-    echo mysqli_error($conn);
+    echo mysqli_error($conn); 
 }
 
 ?>
