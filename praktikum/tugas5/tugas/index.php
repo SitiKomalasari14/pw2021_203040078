@@ -23,12 +23,13 @@ $buku = query("SELECT * FROM buku")
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <!-- css style -->
-        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/stylee2.css">
         <title>BOOK_ID</title>
     </head>
   <body>
-  <script type="text/javascript" src="js/materialize.min.js"></script> 
+  <script type="text/javascript" src="../js/materialize.min.js"></script> 
   <div class="container">
+  <h3>BOOK_ID</h3>
      <table class="highlight - centered brown lighten-4">
         <thead>
             <tr class=" brown darken-1">
@@ -39,6 +40,7 @@ $buku = query("SELECT * FROM buku")
             <th>Sinopsis</th>
             <th>Harga</th>
             <th>Kategori</th>
+            <th>#</th>
             </tr>
         </thead>
     <tbody>
