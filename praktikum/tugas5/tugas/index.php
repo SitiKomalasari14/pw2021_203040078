@@ -11,7 +11,7 @@ B - Informatika
 require 'php/functions.php';
 //melakukan query
 $buku = query("SELECT * FROM buku") 
-
+ 
 ?>
 <!Doctype html>
 <html lang="en">
