@@ -3,8 +3,8 @@
 Siti Komalasari
 203040078
 github.com/SitiKomalasari14/pw2021_203040078
-Pertemuan 12 - (30 APRIL 2021)
-Materi pertemuan kali ini membuat mempelajari mengenai LOGIN & REGISTRASI
+Pertemuan 13 - (11 MEI 2021)
+Materi pertemuan kali ini mempelajari mengenai LIVE SEARCHING AJAX dan Upload Gambar
 */
 ?>
 <?php
@@ -35,7 +35,7 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
 <body>
   <h3>Detail Mahasiswa</h3>
   <ul>
-    <li><img src="img/<?= $m['gambar']; ?>"></li>
+    <li><img src="img/<?= $m['gambar']; ?>" width="250"></li>
     <li>NRP : <?= $m['nrp']; ?></li>
     <li>Nama : <?= $m['nama']; ?></li>
     <li>Email : <?= $m['email']; ?></li>

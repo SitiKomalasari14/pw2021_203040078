@@ -3,8 +3,8 @@
 Siti Komalasari
 203040078
 github.com/SitiKomalasari14/pw2021_203040078
-Pertemuan 12 - (30 APRIL 2021)
-Materi pertemuan kali ini membuat mempelajari mengenai LOGIN & REGISTRASI
+Pertemuan 13 - (11 MEI 2021)
+Materi pertemuan kali ini mempelajari mengenai LIVE SEARCHING AJAX dan Upload Gambar
 */
 ?>
 <?php
