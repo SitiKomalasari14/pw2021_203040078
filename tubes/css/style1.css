@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Wash Your Hand";
+  src: url('../assets/font/wash_your_hand/Wash\ Your\ Hand.ttf');
+}
+@font-face {
+  font-family: "Aerial_Demo";
+  src: url('../assets/font/aerial_2/Aerial_Demo.ttf');
+}
+@font-face {
+  font-family: "Robaga Rounded Light";
+  src: url('../assets/font/robaga_rounded/Robaga\ Rounded\ Light.otf');
+}
+@font-face {
+  font-family: "Hug Me Tight";
+  src: url('../assets/font/hug_me_tight/Hug\ Me\ Tight.ttf');
+}
+body {
+  background: linear-gradient(#d7ccc8, #e2bcb7, #f6e6e4) ;
+  font-family: "Wash Your Hand";
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+button, .btn-small {
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav .logo{
+  margin-left: 50px;
+}
+nav .brand-logo, i {
+  font-family: "Wash Your Hand";
+  letter-spacing: 2px;
+
+}
+nav ul li {
+  padding-left: 30px;
+  font-family: "Hug Me Tight";
+}
+.sidenav {
+  font-family: 'Quicksand', sans-serif;
+  font-style: bold;
+  background-color: #d7ccc8;
+}
+.about, .product, .contact {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.about p {
+  font-size: 20px;
+  font-family: "Hug Me Tight";
+}
+.parallax-container {
+  height: 370px;
+}
+.parallax img {
+  opacity: 0.5 !important;
+  max-width: 100%;
+}
+.product {
+  font-family: "Aerial_Demo";
+  letter-spacing: 2px;
+}
+.product h3 {
+  font-family: "Wash Your Hand";
+}
+.social {
+  margin-top: 20px;
+  display: flex;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social li a:hover {
+  background-color: rgb(71, 113, 158);
+}
+
+.social li a .fab {
+  color:black;
+  font-size: 25px;
+}
+footer {
+  font-family: "Hug Me Tight";
+}
+footer ul li {
+  font-size: 15px;
+}
+footer h5 {
+text-decoration: underline;
+}
+.partner {
+  background: linear-gradient(#e6c4c0, #f6e6e4);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Hug Me Tight";
+}
+.partner h4 {
+  text-decoration: underline;
+}
+.partner img {
+  margin: 10px;
+}
+.contact {
+  background-size: cover;
+  background-image: url('../assets/img/bg3.jpg');
+  background-position: center;
+  background-attachment: fixed;
+}
+form {
+  padding-top: 5px;
+}
+.diskon {
+  padding: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  border-top: red;
+}
+.diskon .tulisan{
+  margin: 40px;
+  padding: 5px;
+  box-shadow: 5px 2px 2px 5px #ba135d;
+}
+.buku {
+  margin: 15px;
+}

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Wash Your Hand";
+    src: url('../assets/font/wash_your_hand/Wash\ Your\ Hand.ttf');
+  }
+  @font-face {
+    font-family: "Robaga Rounded Light";
+    src: url('../assets/font/robaga_rounded/Robaga\ Rounded\ Light.otf');
+  }
+  body {
+   
+    font-family: "Robaga Rounded Light";
+    background: linear-gradient( #687980, #e1e5ea );
+}
+button, .btn-small {
+  font-family: 'Quicksand', sans-serif;
+}
+.placeholder {
+  color: white;
+}
+table {
+    margin: 20px;
+}
+tr {
+    width: 100%;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+nav .logo{
+  margin-left: 50px;
+}
+nav .brand-logo, i {
+  font-family: "Wash Your Hand";
+  letter-spacing: 2px;
+
+}
+nav ul li {
+  padding-left: 30px;
+}
+.sidenav {
+  font-family: 'Quicksand', sans-serif;
+  font-style: bold;
+  background-color: #e1e5ea;
+}
+
+.container h3 {
+    font-family: "Wash Your Hand";
+}
+table, tr, td, th, thead{
+    border: 1px solid black;
+}
+.btn-small {
+    margin: 8px;
+    color: black;
+}
+.slides h1, h3, h5 {
+  font-family: "Wash Your Hand";
+}

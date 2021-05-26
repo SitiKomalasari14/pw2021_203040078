@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+  <title>203040078
+  </title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style3.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <!-- Nav Bar -->
+
+
+  <div class="navbar-fixed">
+    <nav class="indigo" role="navigation">
+      <div class="nav-wrapper">
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a id="logo-container" href="#home" class="brand-logo logo">mxddy</a>
+        <ul class="right hide-on-med-and-down">
+          <li> <a class='dropdown-trigger' href='#' data-target='dropdown1'><i
+                class="material-icons right">arrow_drop_down</i>Kuliah</a>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+            </ul>
+          </li>
+          <li> <a class='dropdown-trigger' href='#' data-target='dropdown1'><i
+                class="material-icons right">arrow_drop_down</i>Praktikum</a>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+            </ul>
+          </li>
+          <li> <a class='dropdown-trigger' href='#' data-target='dropdown1'><i
+                class="material-icons right">arrow_drop_down</i>Tubes</a>
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+  </div>
+  </nav>
+
+  <!--   Side Nav   -->
+  <ul class="sidenav" id="mobile-nav">
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#about">Kuliah</a></li>
+      <li><a href="#product">Praktikum</a></li>
+      <li><a href="#contact">Tubes</a></li>
+    </ul>
+  </ul>
+  <!-- Akhir Side Nav -->
+
+  <!-- Slider -->
+
+  <section class="slider scrollpsy">
+    <ul class="slides">
+      <li>
+        <img src="assets/img/g1.jpg">
+        <div class="caption center-align">
+          <h1>Siti Komalasari</h1>
+          <h4 class="light grey-text text-lighten-3">203040078</h4>
+        </div>
+      </li>
+      <li>
+        <img src="assets/img/g2.jpg">
+        <div class="caption left-align">
+          <h3>BOOK Definition</h3>
+          <p class="light grey-text text-lighten-3">Halaman index ini menampilkan<b>Tugas Kuliah, Praktikum</b>
+            dan <b>Tugas Besar</b> Mata Kuliah Pemograman Web</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Akhir Slider -->
+
+  <!-- About Us -->
+  <section id="about" class="about scrollspy">
+    <div class="container">
+      <div class="row">
+        <h3 class="center light grey-text text-darken-3">About Me</h3>
+        <div class="col m6 light">
+          <h4>About me</h4>
+          <p>Saya adalah seorang Mahasiswa jurusan <b>Teknik Informatika</b> yang sedang menempuh pendidikan di
+            <b>Universitas Pasundan</b>
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Akhir About Us --->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--  Scripts-->
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/41c4d5f501.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+
+  <script>
+    (function ($) {
+      $(function () {
+
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+
+        // Slider
+        $('.slider').slider({
+          fullWidth: true,
+          indicators: false,
+          transition: 600,
+          interval: 3000,
+          height: 500
+
+          //Parallax
+        });
+        $('.dropdown-trigger').dropdown({
+          hover: false
+        });
+      });
+
+    })(jQuery);
+  </script>
+</body>
+
+</html>

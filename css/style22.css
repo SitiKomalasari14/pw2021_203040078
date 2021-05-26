@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Sunday";
+  src: url(../assets/font/winter_sunday_2/Winter\ Sunday.otf);
+}
+@font-face {
+  font-family: "Hug Me Tight";
+  src: url(../assets/font/hug_me_tight/Hug\ Me\ Tight.ttf);
+}
+body {
+  background-color:#f5c0c0;
+  font-family: 'Balsamiq Sans', cursive;
+  color: black;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.btn {
+  background-color: #bbdefb;
+}
+nav {
+  background-color: #f5c0c0;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.sidenav {
+  background-color: #bbdefb;
+}
+nav .logo{
+  margin-left: 50px;
+}
+nav .brand-logo, i {
+  letter-spacing: 2px;
+
+}
+nav ul li {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+.slider, .kuliah h3,
+.praktikum h3, .tubes h3,
+footer h5, .profile h3 {
+  font-family: "Hug Me Tight";
+}
+.profile {
+  padding: 15px;
+  margin-top: 20px;
+  background: #f9f3f3;
+  opacity: .8;
+}
+.praktikum {
+  background-color: #f9f3f3;
+  padding: 15px;
+}
+.tubes {
+  padding: 15px;
+}
+.kuliah {
+  padding: 15px;
+}
+.collapsible, .collapsible-header {
+  text-align: center !important;
+}
+.social {
+  margin-top: 20px;
+  display: flex;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social li a:hover {
+  background-color: #c3aed6;
+}
+
+.social li a .fab {
+  color:black;
+  font-size: 25px;
+}
+footer ul li {
+  font-size: 15px;
+}
+footer h5 {
+text-decoration: underline;
+}
