@@ -22,7 +22,6 @@ $id = $_GET['id_buku'];
 $buku = query("SELECT * FROM buku WHERE id_buku = $id")[0];
 
 ?>
-
 <!Doctype html>
 <html lang="en">
 

@@ -25,7 +25,6 @@ if (isset($_GET["cari"])) {
     $buku = cari($_GET["keyword"]);
 }
 ?>
-
 <!Doctype html>
 <html lang="en">
 
@@ -36,12 +35,9 @@ if (isset($_GET["cari"])) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
-
     <!--font-google-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
-
-
     <!-- css style -->
     <link rel="stylesheet" href="../css/style22.css">
     <title>BOOK_ID</title>

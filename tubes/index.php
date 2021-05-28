@@ -4,7 +4,6 @@ require 'php/functions.php';
 $buku = query("SELECT * FROM buku")
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,11 +13,9 @@ $buku = query("SELECT * FROM buku")
   <!-- font google -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
   <title>BOOK_ID</title>
-
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -26,7 +23,6 @@ $buku = query("SELECT * FROM buku")
 </head>
 
 <body id="home" class="scrollspy">
-
   <!-- Nav Bar -->
   <div class="navbar-fixed">
     <nav class="brown darken" role="navigation">
@@ -67,7 +63,6 @@ $buku = query("SELECT * FROM buku")
   <!--   Akhir Nav   -->
 
   <!-- Slider -->
-
   <section class="slider scrollpsy">
     <ul class="slides">
       <li>
