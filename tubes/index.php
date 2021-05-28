@@ -2,7 +2,6 @@
 require 'php/functions.php';
 //melakukan query
 $buku = query("SELECT * FROM buku")
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -322,13 +321,10 @@ $buku = query("SELECT * FROM buku")
         M.ScrollSpy.init(scroll, {
           scrollOffset: 50
         });
-
-
       });
 
     })(jQuery);
   </script>
-
 </body>
 
 </html>
