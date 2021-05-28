@@ -7,7 +7,6 @@ Pertemuan 11 - (30 APRIL 2021)
 Materi pertemuan kali ini membuat mempelajari mengenai ubah dan hapus data, serta fitur searching
 */
 ?>
-
 <?php
 
 function koneksi()

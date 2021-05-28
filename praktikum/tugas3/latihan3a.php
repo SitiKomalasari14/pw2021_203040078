@@ -6,7 +6,6 @@ SHIFT Jum'at 10:00 - 11:00
 B - Informatika
 */
 ?>
-
 <?php
 $isi = ["ada", "abel", "men", "pung", "nilai"];
 

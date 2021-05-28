@@ -7,7 +7,6 @@ Pertemuan 13 - (11 MEI 2021)
 Materi pertemuan kali ini mempelajari mengenai LIVE SEARCHING AJAX dan Upload Gambar
 */
 ?>
-
 <?php
 
 function koneksi()

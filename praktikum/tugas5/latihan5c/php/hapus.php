@@ -6,12 +6,11 @@ SHIFT Jum'at 10:00 - 11:00
 B - Informatika
 */
 ?>
-<?php 
-
+<?php
 require 'functions.php';
 $id = $_GET['id_buku'];
 
-if(hapus($id) > 0) {
+if (hapus($id) > 0) {
     echo "<script>
             alert('Data BERHASIL dihapus!');
             document.location.href = 'admin.php';

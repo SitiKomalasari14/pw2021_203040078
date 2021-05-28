@@ -2,7 +2,6 @@
 require '../php/functions.php';
 $buku = cari($_GET["keyword"]);
 ?>
-
 <table class="highlight - centered grey lighten-2">
   <thead>
     <tr class="grey darken-1">

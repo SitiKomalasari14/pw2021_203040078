@@ -6,7 +6,7 @@ SHIFT Jum'at 10:00 - 11:00
 B - Informatika
 */
 ?>
-<?php 
+<?php
 $pemain_bola = [
     "Christiano Ronaldo" => "Juventus",
     "Lionel Messi" => "Barcelona",
@@ -16,34 +16,36 @@ $pemain_bola = [
     "Sadio Mane" => "LiverPool",
     "Zlatan Ibrahimovic" => "Ac Milan"
 ];
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>lat3c_203040078</title>
     <style>
-    .tabel {
-        border: 2px solid black;
-        padding: 10px;
-        text-align: left;
-        font-family: arial;
-        width: 50%;
+        .tabel {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: left;
+            font-family: arial;
+            width: 50%;
 
-    }
+        }
     </style>
 </head>
-<body> 
-<div class="tabel">
-<p><b>Daftar pemain bola terkenal dan clubnya</b></p>
+
+<body>
+    <div class="tabel">
+        <p><b>Daftar pemain bola terkenal dan clubnya</b></p>
         <table>
             <?php foreach ($pemain_bola as $pb => $club) : ?>
-                <td><b><?= $pb;?></b></td>
+                <td><b><?= $pb; ?></b></td>
                 <td>:</td>
-                <td><?= $club;?></td>
+                <td><?= $club; ?></td>
                 <tr></tr>
             <?php endforeach; ?>
         </table>
-</div>
+    </div>
 </body>
+
 </html>

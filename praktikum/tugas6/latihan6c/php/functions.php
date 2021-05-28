@@ -6,8 +6,7 @@ SHIFT Jum'at 10:00 - 11:00
 B - Informatika
 */
 ?>
-
-<?php 
+<?php
 // function melakukan connect ke database
 $conn = mysqli_connect("localhost", "root", "", "pw_tubes_203040078");
 function koneksi()
@@ -50,7 +49,7 @@ function tambah($data)
 }
 
 //fungsi menghapus data berdasarkan id
-function hapus($id) 
+function hapus($id)
 {
     $conn = koneksi();
     mysqli_query($conn, "DELETE FROM buku WHERE id_buku = $id");
@@ -81,13 +80,14 @@ function ubah($data)
             kategori= '$kategori' 
             WHERE id_buku = $id
             ";
-        mysqli_query($conn, $query);
+    mysqli_query($conn, $query);
 
-        return mysqli_affected_rows($conn);
+    return mysqli_affected_rows($conn);
 }
 
 // fungsi cari
-function cari($keyword) {
+function cari($keyword)
+{
     $query = "SELECT * FROM buku
             WHERE
             judul LIKE '%$keyword%' OR
@@ -102,9 +102,9 @@ function cari($keyword) {
 //fungsi REGISTRASI
 function registrasi($data)
 {
-   $conn = koneksi();
-   $username = strtolower(stripcslashes($data["username"]));
-   $password = mysqli_real_escape_string($conn, $data["password"]);
+    $conn = koneksi();
+    $username = strtolower(stripcslashes($data["username"]));
+    $password = mysqli_real_escape_string($conn, $data["password"]);
 
     //  cek username sudah ada atau belum
     $result = mysqli_query($conn, "SELECT username FROM user WHERE username = '$username' ");
@@ -112,7 +112,7 @@ function registrasi($data)
         echo "<script>
             alert('username sudah digunakan');
             </script>";
-            return false;
+        return false;
     }
 
     // enkripsi password

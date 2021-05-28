@@ -15,10 +15,7 @@ $id = $_GET['id'];
 
 // Query mahasiswa berdasarkan id
 $m = query("SELECT * FROM mahasiswa WHERE id = $id");
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

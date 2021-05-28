@@ -7,7 +7,6 @@ Pertemuan 11 - (30 APRIL 2021)
 Materi pertemuan kali ini membuat mempelajari mengenai ubah dan hapus data, serta fitur searching
 */
 ?>
-
 <?php
 require 'functions.php';
 $mahasiswa = query("SELECT * FROM mahasiswa");
@@ -17,7 +16,6 @@ if (isset($_POST['cari'])) {
   $mahasiswa = cari($_POST['keyword']);
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

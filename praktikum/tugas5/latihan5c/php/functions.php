@@ -6,8 +6,7 @@ SHIFT Jum'at 10:00 - 11:00
 B - Informatika
 */
 ?>
-
-<?php 
+<?php
 // function melakukan connect ke database
 $conn = mysqli_connect("localhost", "root", "", "pw_tubes_203040078");
 function koneksi()
@@ -50,7 +49,7 @@ function tambah($data)
 }
 
 //fungsi menghapus data berdasarkan id
-function hapus($id) 
+function hapus($id)
 {
     $conn = koneksi();
     mysqli_query($conn, "DELETE FROM buku WHERE id_buku = $id");

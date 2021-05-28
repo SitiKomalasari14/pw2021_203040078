@@ -33,7 +33,6 @@ if (isset($_POST['ubah'])) {
     echo "data GAGAL diubah!";
   }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

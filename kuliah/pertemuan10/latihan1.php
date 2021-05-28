@@ -7,7 +7,6 @@ Pertemuan 10 - (22 APRIL 2021)
 Materi pertemuan kali ini membuat mempelajari mengenai koneksi database dan insert data 
 */
 ?>
-
 <?php
 // Koneksi ke DB & Pilih Database
 $conn = mysqli_connect('localhost', 'root', '', 'pw_203040078');
@@ -27,7 +26,6 @@ while ($row = mysqli_fetch_assoc($result)) {
 // Tampung ke variabel mahasiswa
 $mahasiswa = $rows;
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

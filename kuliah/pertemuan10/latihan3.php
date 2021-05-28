@@ -7,12 +7,10 @@ Pertemuan 10 - (22 APRIL 2021)
 Materi pertemuan kali ini membuat mempelajari mengenai koneksi database dan insert data 
 */
   ?>
-
  <?php
   require 'functions.php';
   $mahasiswa = query("SELECT * FROM mahasiswa");
   ?>
-
  <!DOCTYPE html>
  <html lang="en">
 

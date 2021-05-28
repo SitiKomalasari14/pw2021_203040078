@@ -11,12 +11,12 @@ session_start();
 require 'functions.php';
 
 // cek cookie
-if(isset($_COOKIE['username']) && isset($_COOKIE['hash'])) {
+if (isset($_COOKIE['username']) && isset($_COOKIE['hash'])) {
     $username = $_COOKIE['username'];
     $hash = $_COOKIE['hash'];
 
     // ambil username berdasarkan id 
-    $result = mysqli_query(konkesi(), "SELECT * FROM user WHERE username = '$username'");
+    $result = mysqli_query(koneksi(), "SELECT * FROM user WHERE username = '$username'");
     $row = mysqli_fetch_assoc($result);
 
     // cek cookie dan username
@@ -24,7 +24,7 @@ if(isset($_COOKIE['username']) && isset($_COOKIE['hash'])) {
         $_SESSION['username'] = $row['username'];
         header("Location: admin.php");
     }
-} 
+}
 
 // melakukan pengecekan apakah user sudah melakukan Login jika sudah redirect ke halaman admin
 if (isset($_SESSION['username'])) {
@@ -39,18 +39,18 @@ if (isset($_POST['submit'])) {
     // mencocokan USERNAME dan PASSWORD
     if (mysqli_num_rows($cek_user) > 0) {
         $row = mysqli_fetch_assoc($cek_user);
-        if(password_verify($password, $row['password'])) {
+        if (password_verify($password, $row['password'])) {
             $_SESSION['username'] = $_POST['username'];
             $_SESSION['hash'] = hash('sha256', $row['id'], false);
 
             //jika remember me dicentang
-            if(isset($_POST['remember'])) {
+            if (isset($_POST['remember'])) {
                 setcookie('username', $row['username'], time() + 60 * 60 * 24);
                 $hash = hash('sha256', $row['id']);
                 setcookie('hash', $hash, time() + 60 * 60 * 24);
             }
 
-            if(hash('sha256', $row['id']) == $_SESSION['hash']) {
+            if (hash('sha256', $row['id']) == $_SESSION['hash']) {
                 header("Location: admin.php");
                 die;
             }
@@ -62,6 +62,7 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,7 +70,7 @@ if (isset($_POST['submit'])) {
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
     <!-- css style -->
     <link rel="stylesheet" href="../css/stylee2.css">
     <title>Login</title>
@@ -77,10 +78,12 @@ if (isset($_POST['submit'])) {
         body {
             background-color: #e4d3cf;
         }
+
         h3 {
             padding-left: 15%;
             padding-bottom: 35px;
         }
+
         form {
             width: 50%;
             height: 90%;
@@ -88,11 +91,12 @@ if (isset($_POST['submit'])) {
         }
     </style>
 </head>
+
 <body>
-<h3>Login Admin BOOK_ID</h3>
-<script type="text/javascript" src="../js/materialize.min.js"></script> 
-<form action="" method="post">
-        <?php if(isset($error)) : ?>
+    <h3>Login Admin BOOK_ID</h3>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <form action="" method="post">
+        <?php if (isset($error)) : ?>
             <p style="color: red; font-style: italic;">Username atau password salah</p>
         <?php endif; ?>
         <div class="card-panel ">
@@ -106,21 +110,22 @@ if (isset($_POST['submit'])) {
                 <td>:</td>
                 <td><input type="password" name="password"></td>
             </tr>
-            </div>
-    <div class="remember">
-        <label>
-            <label for="remember"></label>
-            <input type="checkbox" name="remember">
-            <span>Remember Me</span>
-        </label>
-        <br><br>
-    </div>
-    <button type="submit" name="submit" class="waves-effect waves-light btn-small blue darken-2">Login</button>
+        </div>
+        <div class="remember">
+            <label>
+                <label for="remember"></label>
+                <input type="checkbox" name="remember">
+                <span>Remember Me</span>
+            </label>
+            <br><br>
+        </div>
+        <button type="submit" name="submit" class="waves-effect waves-light btn-small blue darken-2">Login</button>
 
-    <div class="registrasi">
-        <p>Belum punya akun? REGISTRASI <a href="registrasi.php">Disini</a></p>
-    
-    </div>
+        <div class="registrasi">
+            <p>Belum punya akun? REGISTRASI <a href="registrasi.php">Disini</a></p>
+
+        </div>
     </form>
 </body>
+
 </html>

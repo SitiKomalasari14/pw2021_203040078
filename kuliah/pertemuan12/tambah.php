@@ -28,7 +28,6 @@ if (isset($_POST['tambah'])) {
     echo "Data GAGAL ditambahkan!";
   }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

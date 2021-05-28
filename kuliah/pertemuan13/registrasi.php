@@ -21,7 +21,6 @@ if (isset($_POST['registrasi'])) {
   }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
